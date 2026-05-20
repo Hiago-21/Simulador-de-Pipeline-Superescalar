@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Superescalar: Esteira de Execução</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Esteira de Execução: Superescalar</h1>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="instCount">Instruções:</label>
+                <input type="range" id="instCount" min="4" max="20" value="8">
+                <span id="instValue" style="min-width: 25px;">8</span>
+            </div>
+            
+            <div class="control-group">
+                <label for="pipelineWidth">Grau Superescalar:</label>
+                <select id="pipelineWidth">
+                    <option value="1">1 via </option>
+                    <option value="2">2 vias</option>
+                    <option value="4">4 vias</option>
+                </select>
+            </div>
+            
+            <button id="startBtn">Iniciar Clock</button>
+        </div>
+
+        <div class="status">
+            Ciclo de Clock: <span id="cycleDisplay">0</span>
+        </div>
+
+        <!-- A Área da Esteira onde a animação acontece -->
+        <div class="sim-area" id="simArea">
+            <div class="aurea"><div class="stage-title">Fila de Entrada</div></div>
+            <div class="stage-bg"><div class="stage-title">1. Busca<br>(Fetch)</div></div>
+            <div class="stage-bg"><div class="stage-title">2. Decodifica<br>(Decode)</div></div>
+            <div class="stage-bg"><div class="stage-title">3. Executa<br>(Execute)</div></div>
+            <div class="stage-bg"><div class="stage-title">4. Escreve<br>(Write)</div></div>
+            <div class="aurea"><div class="stage-title">Finalizado</div></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
