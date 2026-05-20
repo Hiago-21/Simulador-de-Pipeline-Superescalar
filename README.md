@@ -1,3 +1,3 @@
-Um mini projetinho para apresentar no seminário de de Arquitetura de Computadores dia 21/05/26.
+Mini projeto desenvolvido para o seminário de Arquitetura de Computadores (21/05/2026). 
 
-Ele é um visualizador básico para eu e minha equipe explicarmos como funciona os Processadores Superescalares e como eles reduzem significativamente a quantidade de Clock's do computador necessários para resolver instruções.
+Trata-se de um visualizador interativo criado para explicar o funcionamento dos Processadores Superescalares, demonstrando visualmente como eles reduzem significativamente a quantidade de ciclos de clock necessários para executar um conjunto de instruções.
